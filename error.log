@@ -1,0 +1,17 @@
+import logging
+from logging import FileHandler
+
+# Initialize Flask app
+app = Flask(__name__)
+
+# Configure error logging
+if __name__ == '__main__':
+    handler = FileHandler('error.log')
+    handler.setLevel(logging.ERROR)
+    app.logger.addHandler(handler)
+
+    # Optional: Format log messages
+    formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+    handler.setFormatter(formatter)
+
+    serve(app, host='127.0.0.1', port=5000)
