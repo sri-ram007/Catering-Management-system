@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing of Foods</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-size: cover;
+            background-image: url("{{ url_for('static', filename='hi.jpg.jpg') }}"); 
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .table {
+            word-spacing: 8px;
+            width: 50%;
+            margin: 30px auto;
+        }
+        .table thead th {
+            background-color: #007bff;
+            color: white;
+        }
+        .table tbody tr {
+            background-color: #f8f9fa;
+        }
+        .table tbody tr:nth-child(even) {
+            background-color: #e9ecef;
+        }
+        .table th, .table td {
+            padding: 15px;
+            text-align: center;
+        }
+        .table th {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>PRICING OF FOODS</h1>
+
+    <table class="table table-bordered table-hover" align="center">
+        <thead>
+            <tr>
+                <th scope="col">No</th>
+                <th scope="col">Items</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Tea</td>
+                <td>1</td>
+                <td>Rs.8</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Coffee</td>
+                <td>1</td>
+                <td>Rs.12</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Vada</td>
+                <td>1</td>
+                <td>Rs.7</td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>idly</td>
+              <td>1</td>
+              <td>Rs.9</td>
+            </tr>  
+              <tr>
+                <th scope="row">5</th>
+                <td>dosa</td>
+                <td>1</td>
+                <td>Rs.20</td>
+            </tr>
+            <tr>
+                <th scope="row">6</th>
+                <td>Poori</td>
+                <td>1</td>
+                <td>Rs.20</td>
+            </tr>
+            <tr>
+                <th scope="row">7</th>
+                <td>Baji</td>
+                <td>1</td>
+                <td>Rs.5</td>
+            </tr>
+            <tr>
+                <th scope="row">8</th>
+                <td>Samosa</td>
+                <td>1</td>
+                <td>Rs.5</td>
+            </tr>
+            <tr>
+                <th scope="row">9</th>
+                <td>Variety Rice</td>
+                <td>1</td>
+                <td>Rs.25</td>
+            </tr>
+            <tr>
+                <th scope="row">10</th>
+                <td>Biriyani</td>
+                <td>1</td>
+                <td>Rs.50</td>
+            </tr>
+            <tr>
+                <th scope="row">11</th>
+                <td>Meals</td>
+                <td>1</td>
+                <td>Rs.60</td>
+            </tr>
+          </tbody>
+    </table>
+
+    <!-- Bootstrap JS and Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+</body>
+</html>
