@@ -7,54 +7,24 @@
     <!-- Bootstrap CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        body {
-            background-color: bisque;
+        body{
+            background-image: url("{{ url_for('static', filename='hi.jpg.jpg') }}");;
+           Text-align:center;
         }
-        .sidebar {
-            background-color: grey;
-            height:100vh;
-        }
-        .content {
-            background-color: aqua;
+        .container{
+            margin-bottom:100px;
+            background-color:grey;
+            border-radius:1px; 
         }
     </style>
 </head>
 <body>
-    <div class="container-fluid">
-        <div class="row">
-            <nav class="col-md-2 d-none d-md-block sidebar">
-                <div class="sidebar-sticky">
-                    <ul class="nav flex-column">
-                        <h1>Logged In</h1>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Orders</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Log Out</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-            <main role="main" class="col-md-10 ml-sm-auto px-4 content">
-                <h1 class="mt-5">Welcome </h1>
-                <p class="lead">Services:-</p>
-                <div class="row">
-                    <div class="col-sm-2">From:-<br>
-                                          Morning Orders:-<br>
-                                          Lunch Orders:-<br>
-                                          Evening Snacks:- 
-                    </div>
-                    <div class="col-sm-10">Alagappa University Canteen<br>
-                                           Accepted from 10.00AM to 11.30AM<br>
-                                           Accepted from 12.30PM to 01.30PM<br>
-                                           Accepted from 03.00PM to 04.30PM  
-                    </div>
-                </div>
-            </main>
-        </div>
+    <div class="container">
+        <h1 class="mt-5">About:-</h1>
+        <p class="lead">University Canteen</p>
+        <p>Alagappa university canteen Services<br>
+            42/1,pari nagar<br>karaikudi<br>
+            pincode:630001<br></p>
     </div>
     <!-- Bootstrap JS and dependencies -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

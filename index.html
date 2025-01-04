@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Catering System</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-image: url("{{ url_for('static', filename='hi.jpg.jpg') }}");
+            background-size: cover;
+            text-align: center;
+        }
+
+        .content {
+            flex: 1;
+        }
+
+        h1 {
+            color: aqua;
+        }
+
+        .login-container {
+            background-color: #b818a2;
+            padding-bottom: 20px;
+            word-spacing: 30px;
+        }
+
+        .navbar {
+            background-color: transparent;
+            width: 100%;
+            text-align: start;
+        }
+
+        .navbar-brand, .navbar-nav {
+            color: aquamarine;
+        }
+
+        .navbar-nav .nav-link {
+            color: aquamarine;
+        }
+
+        .bottom-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            background-color: #f8f8f8;
+        }
+
+        .grid-item {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="login-container">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"></a>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link active" aria-current="page" href="{{ url_for('index') }}">Home</a>
+                            <a class="nav-link" href="{{url_for('price')}}">Pricing</a>
+                            <a class="nav-link" href="{{ url_for('login') }}">Login</a>
+                            <br> <br>
+                            <a class="nav-link" href="{{ url_for('about_page') }}">About</a>
+                            <a class="nav-link" href="{{ url_for('register') }}">Register</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <h1>ONLINE CATERING SYSTEM</h1>
+    </div>
+    <div class="bottom-grid">
+        <div class="grid-item">
+            About Us:-
+            <br>Alagappa university canteen Services<br>
+            42/1,pari nagar<br>karaikudi<br>
+            pincode:630001<br>
+        </div>
+        <div class="grid-item">
+            Services:-
+            <br>Food services
+            <br>snack services
+            <br>delivery services
+        </div>
+        <div class="grid-item">
+            Contact:-
+            <br> Alagappa university
+            <br> phone no:-223455
+        </div>
+        <div class="grid-item">
+            Privacy Policy:-
+            <br>Do not share the food
+            <br> Do not waste food
+        </div>
+    </div>
+</body>
+</html>
